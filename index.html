@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap&_v=20230508141536" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230508141536">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__top top">
+				<div class="top__container">
+					<div class="top__inner">
+						<button type="button" class="top__btn" data-popup="#task">
+							<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4.8125 10.3125C4.8125 10.4948 4.88493 10.6697 5.01386 10.7986C5.1428 10.9276 5.31766 11 5.5 11C5.68234 11 5.8572 10.9276 5.98614 10.7986C6.11507 10.6697 6.1875 10.4948 6.1875 10.3125V6.1875H10.3125C10.4948 6.1875 10.6697 6.11507 10.7986 5.98614C10.9276 5.8572 11 5.68234 11 5.5C11 5.31766 10.9276 5.1428 10.7986 5.01386C10.6697 4.88493 10.4948 4.8125 10.3125 4.8125H6.1875V0.6875C6.1875 0.505164 6.11507 0.330295 5.98614 0.201364C5.8572 0.0724328 5.68234 0 5.5 0C5.31766 0 5.1428 0.0724328 5.01386 0.201364C4.88493 0.330295 4.8125 0.505164 4.8125 0.6875V4.8125H0.6875C0.505164 4.8125 0.330295 4.88493 0.201364 5.01386C0.0724328 5.1428 0 5.31766 0 5.5C0 5.68234 0.0724328 5.8572 0.201364 5.98614C0.330295 6.11507 0.505164 6.1875 0.6875 6.1875H4.8125V10.3125Z" fill="white" />
+							</svg>
+							<span>Додати завдання</span></button>
+						<div class="top__info">
+							<div class="top__text">Користувач:</div>
+							<a href="#" class="top__link">Станіслав Соколов</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__bottom bottom">
+				<div class="bottom__container">
+					<div class="bottom__inner">
+						<div class="bottom__head">
+							<div class="bottom__title text-red">Просрочені</div>
+							<div class="bottom__filter filter-bottom">
+								<div class="filter-bottom__text">Сортувати по:</div>
+								<button type="button" class="filter-bottom__date">По даті</button>
+								<button type="button" class="filter-bottom__priority text-red">По пріорітету</button>
+							</div>
+						</div>
+						<div class="bottom__line line-bottom">
+							<div class="line-bottom__inner">
+								<div class="checkbox">
+									<input id="c_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label"></label>
+								</div>
+								<div class="line-bottom__info">
+									<div class="line-bottom__title">test<span>Пріоритет: Високий</span></div>
+									<div class="line-bottom__text">test</div>
+									<div class="line-bottom__author">Станіслав Соколов</div>
+								</div>
+							</div>
+							<div class="line-bottom__right">
+								<div class="line-bottom__date">
+									<span>2 місяці тому</span>
+									<span>(13.03.2023 20:42)</span>
+								</div>
+								<button type="button" class="line-bottom__remove">
+									<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 1L1 8M1.00001 1L8 8" stroke="#FF0000" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Видалити</span>
+								</button>
+							</div>
+						</div>
+						<div class="bottom__line line-bottom">
+							<div class="line-bottom__inner">
+								<div class="checkbox">
+									<input id="c_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label"></label>
+								</div>
+								<div class="line-bottom__info">
+									<div class="line-bottom__title">перенабрати<span>Пріоритет: Середній</span></div>
+									<div class="line-bottom__author">Станіслав Соколов</div>
+								</div>
+							</div>
+							<div class="line-bottom__right">
+								<div class="line-bottom__date">
+									<span>2 місяці тому</span>
+									<span>(15.03.2023 11:18)</span>
+								</div>
+								<button type="button" class="line-bottom__remove">
+									<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 1L1 8M1.00001 1L8 8" stroke="#FF0000" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Видалити</span>
+								</button>
+							</div>
+						</div>
+						<div class="bottom__line line-bottom">
+							<div class="line-bottom__inner">
+								<div class="checkbox">
+									<input id="c_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]" checked>
+									<label for="c_3" class="checkbox__label"></label>
+								</div>
+								<div class="line-bottom__info">
+									<div class="line-bottom__title">перенабрати<span>Пріоритет: Середній</span></div>
+									<div class="line-bottom__author">Станіслав Соколов</div>
+								</div>
+							</div>
+							<div class="line-bottom__right">
+								<div class="line-bottom__date">
+									<span>2 місяці тому</span>
+									<span>(15.03.2023 11:20)</span>
+								</div>
+								<button type="button" class="line-bottom__remove">
+									<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 1L1 8M1.00001 1L8 8" stroke="#FF0000" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Видалити</span>
+								</button>
+							</div>
+						</div>
+						<div class="bottom__line line-bottom">
+							<div class="line-bottom__inner">
+								<div class="checkbox">
+									<input id="c_4" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label"></label>
+								</div>
+								<div class="line-bottom__info">
+									<div class="line-bottom__title">уточнити чи зробив чіп<span>Пріоритет: Середній</span></div>
+									<div class="line-bottom__author">Станіслав Соколов</div>
+								</div>
+							</div>
+							<div class="line-bottom__right">
+								<div class="line-bottom__date">
+									<span>місяць тому</span>
+									<span>(03.04.2023 11:21)</span>
+								</div>
+								<button type="button" class="line-bottom__remove">
+									<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 1L1 8M1.00001 1L8 8" stroke="#FF0000" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Видалити</span>
+								</button>
+							</div>
+						</div>
+						<div class="bottom__line line-bottom">
+							<div class="line-bottom__inner">
+								<div class="checkbox">
+									<input id="c_5" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label"></label>
+								</div>
+								<div class="line-bottom__info">
+									<div class="line-bottom__title">чіп<span>Пріоритет: Середній</span></div>
+									<div class="line-bottom__author">Станіслав Соколов</div>
+								</div>
+							</div>
+							<div class="line-bottom__right">
+								<div class="line-bottom__date">
+									<span>21 день тому</span>
+									<span>(14.04.2023 09:55)</span>
+								</div>
+								<button type="button" class="line-bottom__remove">
+									<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 1L1 8M1.00001 1L8 8" stroke="#FF0000" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Видалити</span>
+								</button>
+							</div>
+						</div>
+						<div class="bottom__line line-bottom">
+							<div class="line-bottom__inner">
+								<div class="checkbox">
+									<input id="c_6" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_6" class="checkbox__label"></label>
+								</div>
+								<div class="line-bottom__info">
+									<div class="line-bottom__title">запитати чи зробив чіп<span>Пріоритет: Середній</span></div>
+									<div class="line-bottom__text">test</div>
+									<div class="line-bottom__author">Станіслав Соколов</div>
+								</div>
+							</div>
+							<div class="line-bottom__right">
+								<div class="line-bottom__date">
+									<span>21 день тому</span>
+									<span>(14.04.2023 10:11)</span>
+								</div>
+								<button type="button" class="line-bottom__remove">
+									<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 1L1 8M1.00001 1L8 8" stroke="#FF0000" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Видалити</span>
+								</button>
+							</div>
+						</div>
+						<div class="bottom__line line-bottom">
+							<div class="line-bottom__inner">
+								<div class="checkbox">
+									<input id="c_7" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_7" class="checkbox__label"></label>
+								</div>
+								<div class="line-bottom__info">
+									<div class="line-bottom__title">test<span>Пріоритет: Високий</span></div>
+									<div class="line-bottom__text">test</div>
+									<div class="line-bottom__author">Станіслав Соколов</div>
+								</div>
+							</div>
+							<div class="line-bottom__right">
+								<div class="line-bottom__date">
+									<span>7 днів тому</span>
+									<span>(27.04.2023 22:14)</span>
+								</div>
+								<button type="button" class="line-bottom__remove">
+									<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 1L1 8M1.00001 1L8 8" stroke="#FF0000" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Видалити</span>
+								</button>
+							</div>
+						</div>
+						<div class="bottom__line line-bottom">
+							<div class="line-bottom__inner">
+								<div class="checkbox">
+									<input id="c_8" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_8" class="checkbox__label"></label>
+								</div>
+								<div class="line-bottom__info">
+									<div class="line-bottom__title">ТЕСТ АРТЬОМ<span>Пріоритет: Низький</span></div>
+									<div class="line-bottom__text">Тест</div>
+									<div class="line-bottom__author">Станіслав Соколов</div>
+								</div>
+							</div>
+							<div class="line-bottom__right">
+								<div class="line-bottom__date">
+									<span>20 годин тому</span>
+									<span>(04.05.2023 13:57)</span>
+								</div>
+								<button type="button" class="line-bottom__remove">
+									<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 1L1 8M1.00001 1L8 8" stroke="#FF0000" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Видалити</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="bottom__inner">
+						<div class="bottom__head">
+							<div class="bottom__title">Сьогоднішні</div>
+							<div class="bottom__filter filter-bottom">
+								<div class="filter-bottom__text">Сортувати по:</div>
+								<button type="button" class="filter-bottom__date">По даті</button>
+								<button type="button" class="filter-bottom__priority text-red">По пріорітету</button>
+							</div>
+						</div>
+						<div class="bottom__line line-bottom">
+							<div class="line-bottom__inner">
+								<div class="checkbox">
+									<input id="c_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label"></label>
+								</div>
+								<div class="line-bottom__info">
+									<div class="line-bottom__title">ТАСКТ ТЕСТ<span>Пріоритет: Високий</span></div>
+									<div class="line-bottom__text">ТЕСТ ТАККСК</div>
+									<div class="line-bottom__author">Станіслав Соколов</div>
+								</div>
+							</div>
+							<div class="line-bottom__right">
+								<div class="line-bottom__date">
+									<span>За 5 годин</span>
+									<span>(05.05.2023 15:09)</span>
+								</div>
+								<button type="button" class="line-bottom__remove">
+									<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 1L1 8M1.00001 1L8 8" stroke="#FF0000" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Видалити</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="task" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content task">
+				<div class="task__title">
+					Додати завдання
+				</div>
+				<div class="task__inner">
+					<form action="#" class="task__form form-task">
+						<div class="form-task__item">
+							<label class="form-task__label">Опис</label>
+							<textarea autocomplete="off" name="form[]" placeholder="" data-error="Помилка" class="form-task__textarea"></textarea>
+						</div>
+						<div class="form-task__item">
+							<label class="form-task__label">Термін Виконання</label>
+							<input autocomplete="off" type="datetime-local" name="form[]" data-error="Помилка" placeholder="" class="form-task__input">
+						</div>
+						<div class="form-task__item">
+							<label class="form-task__label">Пріоритет</label>
+							<div class="options">
+								<div class="options__item">
+									<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+									<label for="o_1" class="options__label"><span class="options__text">Високий</span></label>
+								</div>
+								<div class="options__item">
+									<input id="o_2" class="options__input" type="radio" value="2" name="option">
+									<label for="o_2" class="options__label"><span class="options__text">Середній</span></label>
+								</div>
+								<div class="options__item">
+									<input id="o_3" class="options__input" type="radio" value="3" name="option">
+									<label for="o_3" class="options__label"><span class="options__text">Низький</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="form-task__item">
+							<label class="form-task__label">Виконавці</label>
+							<select name="form[]" data-class-modif="form">
+								<option value="">Оберіть виконавця...</option>
+								<option value="1">Пункт №1</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<div class="task__bottom">
+					<button data-close type="button" class="popup__close">Закрити</button>
+					<button type="button" class="popup__add">Додати</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230508141536"></script>
+</body>
+
+</html>
