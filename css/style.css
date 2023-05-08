@@ -980,8 +980,8 @@ body::after {
   display: grid;
   text-align: center;
   font-weight: 500;
-  -ms-grid-columns: minmax(140px, 1fr) minmax(190px, 1fr) minmax(245px, 1fr) minmax(225px, 1fr) minmax(190px, 1fr) minmax(220px, 1fr) minmax(200px, 1fr) minmax(140px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr) (65px)[4];
-  grid-template-columns: minmax(140px, 1fr) minmax(190px, 1fr) minmax(245px, 1fr) minmax(225px, 1fr) minmax(190px, 1fr) minmax(220px, 1fr) minmax(200px, 1fr) minmax(140px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr) repeat(4, 65px);
+  -ms-grid-columns: minmax(80px, 1fr) minmax(130px, 1fr) minmax(180px, 1fr) minmax(170px, 1fr) minmax(170px, 1fr) minmax(200px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) (50px)[4];
+  grid-template-columns: minmax(80px, 1fr) minmax(130px, 1fr) minmax(180px, 1fr) minmax(170px, 1fr) minmax(170px, 1fr) minmax(200px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) repeat(4, 50px);
 }
 
 .table-lids__item:not(:last-child) {
@@ -1005,8 +1005,8 @@ body::after {
 }
 
 .table-lids__head {
-  -ms-grid-columns: minmax(140px, 1fr) minmax(190px, 1fr) minmax(245px, 1fr) minmax(225px, 1fr) minmax(190px, 1fr) minmax(220px, 1fr) minmax(200px, 1fr) minmax(140px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr) 260px;
-  grid-template-columns: minmax(140px, 1fr) minmax(190px, 1fr) minmax(245px, 1fr) minmax(225px, 1fr) minmax(190px, 1fr) minmax(220px, 1fr) minmax(200px, 1fr) minmax(140px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr) 260px;
+  -ms-grid-columns: minmax(80px, 1fr) minmax(130px, 1fr) minmax(180px, 1fr) minmax(170px, 1fr) minmax(170px, 1fr) minmax(200px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) 200px;
+  grid-template-columns: minmax(80px, 1fr) minmax(130px, 1fr) minmax(180px, 1fr) minmax(170px, 1fr) minmax(170px, 1fr) minmax(200px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) 200px;
 }
 
 .table-lids__head:not(:last-child) {
@@ -1096,6 +1096,11 @@ body::after {
 .table-btn {
   color: #0084FF;
   font-weight: 600;
+}
+
+.table-icon svg {
+  width: 0.9375rem;
+  height: 0.9375rem;
 }
 
 .form-task__item .select__title {
@@ -1210,15 +1215,15 @@ body::after {
   }
 
   .table-lids__item {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .table-lids__head {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .table-btn {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -1324,15 +1329,15 @@ body::after {
   }
 
   .table-lids__item {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
 
   .table-lids__head {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
 
   .table-btn {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
 }
 
@@ -1661,39 +1666,39 @@ body::after {
     }
 }
 
-@supports (font-size: clamp( 0.75rem , 0.65rem  +  0.5vw , 1.25rem )) {
+@supports (font-size: clamp( 0.625rem , 0.55rem  +  0.375vw , 1rem )) {
     .table-lids__item {
-      font-size: clamp( 0.75rem , 0.65rem  +  0.5vw , 1.25rem );
+      font-size: clamp( 0.625rem , 0.55rem  +  0.375vw , 1rem );
     }
 }
 
-@supports not (font-size: clamp( 0.75rem , 0.65rem  +  0.5vw , 1.25rem )) {
+@supports not (font-size: clamp( 0.625rem , 0.55rem  +  0.375vw , 1rem )) {
     .table-lids__item {
-      font-size: calc(0.75rem + 0.5 * (100vw - 20rem) / 100);
+      font-size: calc(0.625rem + 0.375 * (100vw - 20rem) / 100);
     }
 }
 
-@supports (font-size: clamp( 0.75rem , 0.675rem  +  0.375vw , 1.125rem )) {
+@supports (font-size: clamp( 0.625rem , 0.55rem  +  0.375vw , 1rem )) {
     .table-lids__head {
-      font-size: clamp( 0.75rem , 0.675rem  +  0.375vw , 1.125rem );
+      font-size: clamp( 0.625rem , 0.55rem  +  0.375vw , 1rem );
     }
 }
 
-@supports not (font-size: clamp( 0.75rem , 0.675rem  +  0.375vw , 1.125rem )) {
+@supports not (font-size: clamp( 0.625rem , 0.55rem  +  0.375vw , 1rem )) {
     .table-lids__head {
-      font-size: calc(0.75rem + 0.375 * (100vw - 20rem) / 100);
+      font-size: calc(0.625rem + 0.375 * (100vw - 20rem) / 100);
     }
 }
 
-@supports (font-size: clamp( 0.75rem , 0.65rem  +  0.5vw , 1.25rem )) {
+@supports (font-size: clamp( 0.625rem , 0.55rem  +  0.375vw , 1rem )) {
     .table-btn {
-      font-size: clamp( 0.75rem , 0.65rem  +  0.5vw , 1.25rem );
+      font-size: clamp( 0.625rem , 0.55rem  +  0.375vw , 1rem );
     }
 }
 
-@supports not (font-size: clamp( 0.75rem , 0.65rem  +  0.5vw , 1.25rem )) {
+@supports not (font-size: clamp( 0.625rem , 0.55rem  +  0.375vw , 1rem )) {
     .table-btn {
-      font-size: calc(0.75rem + 0.5 * (100vw - 20rem) / 100);
+      font-size: calc(0.625rem + 0.375 * (100vw - 20rem) / 100);
     }
 }
 }
